@@ -38,7 +38,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="AC"/>
                                 <connections>
-                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HdS-yG-bwc"/>
+                                    <action selector="tapClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DDa-wS-9YM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJ7-7k-CHn">
@@ -46,9 +46,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="√"/>
+                                <state key="normal" title="+/-"/>
                                 <connections>
-                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YkV-S1-PGu"/>
+                                    <action selector="tapOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bN1-gJ-UTw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEc-zf-owG">
@@ -58,7 +58,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="%"/>
                                 <connections>
-                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c87-tp-PEJ"/>
+                                    <action selector="tapOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MZD-xS-0GI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6M-JZ-kix">
@@ -70,7 +70,7 @@
                                     <color key="titleColor" white="0.92926897320000001" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s9v-T3-bN5"/>
+                                    <action selector="tapOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uBw-H9-4LL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpT-NB-b0n">
@@ -82,7 +82,7 @@
                                     <color key="titleColor" white="0.92926897320000001" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ni-1c-I3R"/>
+                                    <action selector="tapOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wBp-J7-yL4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xch-YX-DaV">
@@ -94,7 +94,7 @@
                                     <color key="titleColor" white="0.92926897320000001" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lxf-do-P66"/>
+                                    <action selector="tapOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tdF-al-NHb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbf-sN-9ko">
@@ -106,7 +106,7 @@
                                     <color key="titleColor" white="0.92926897320000001" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IeG-Zo-sL9"/>
+                                    <action selector="tapOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qbO-JM-ksR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIV-x0-Yvr">
@@ -118,7 +118,7 @@
                                     <color key="titleColor" white="0.92926897320000001" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="operate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="km2-7c-mAo"/>
+                                    <action selector="tapOperator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Wi-mM-lzY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aae-cb-pa7">

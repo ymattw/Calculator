@@ -11,17 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var display: UILabel!
-    var userInputting = false
-
-    var displayValue: Double {
-        get {
-            let x = Double(display.text!)
-            return x != nil ? x! : 0.0
-        }
-        set {
-            display.text = String(newValue)
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,31 +22,48 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func tapDigit(_ sender: UIButton) {
-        let digit = sender.currentTitle!
-
-        if userInputting {
-            display.text = display.text! + digit
-        } else {
-            display.text = digit
-            userInputting = true
+    var displayValue: Double {
+        get {
+            let x = Double(display.text!)
+            return x != nil ? x! : 0
+        }
+        set {
+            display.text = String(newValue)
         }
     }
 
-    @IBAction func operate(_ sender: UIButton) {
-        let op = sender.currentTitle!
+    private var beginOfInput = true
 
-        switch op {
-        case "AC":
-            displayValue = 0
-        case "√":
-            displayValue = sqrt(displayValue)
-        case "%":
-            break
-        default:
-            break
+    @IBAction func tapDigit(_ sender: UIButton) {
+        let digit = sender.currentTitle!
+
+        if beginOfInput {
+            display.text = digit
+            beginOfInput = false
+        } else {
+            display.text = display.text! + digit
         }
+    }
 
-        userInputting = false
+    private var calculator = Calculator()
+
+    @IBAction func tapClear(_ sender: UIButton) {
+        _ = calculator.clear()
+        beginOfInput = true
+        displayValue = 0
+    }
+
+    @IBAction func tapOperator(_ sender: UIButton) {
+        let symbol = sender.currentTitle!
+
+        calculator.setOperand(displayValue)
+
+        let result = calculator.calc(symbol)
+
+        if result != nil {
+            displayValue = result!
+        } else {
+            beginOfInput = true
+        }
     }
 }
